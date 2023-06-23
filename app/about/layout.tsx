@@ -9,8 +9,8 @@ const AboutLayout:React.FC<Props> = ({children}) => {
         <div>
             <h2> About us</h2>
             <ul>
-                <li><Link href={'/about/contact'}/> Contacts</li>
-                <li><Link href={'/about/team'}/> Team</li>
+                <li><Link href={'/about/contact'}> Contacts </Link></li>
+                <li><Link href={'/about/team'}> Team </Link></li>
             </ul>
             {children}
         </div>
