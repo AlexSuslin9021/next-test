@@ -1,9 +1,25 @@
 import {Metadata} from "next";
+import Link from "next/link";
 
 export const metadata ={
   title:"Blog | next App"
 }
 
-export default function Blog () {
-  return <div>Blog</div>
+async  function getData(){
+  const res=await fetch('https://jsonplaceholder.typicode.com/posts')
+return res.json()
+}
+
+export default async function Blog () {
+  const posts=await getData()
+  return <>
+    <h1>Blog</h1>
+    <ul>
+      {posts.map((post:any)=>(
+        <li key={post.id}>
+          <Link href={`/blog/${post.id}`}> {post.title}</Link>
+        </li>
+      ))}
+    </ul>
+  </>
 }
