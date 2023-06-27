@@ -7,17 +7,25 @@
   width: 100vw;
   align-items: center;
 }
+.active{
+  color:red;
+
+}
+.noActive{
+  color: white;;
+}
 .header{
   width: 100vw;
   height: 80px;
   background-color: black;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .header a {
   text-decoration: none;
   margin-right:20px ;
-  color: white;
+
 }
 .header a:hover{
   color: lightblue;
