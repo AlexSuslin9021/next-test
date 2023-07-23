@@ -2,7 +2,7 @@ import React from 'react';
 
 const TheFooter = () => {
     return (
-        <div >
+        <div className={'footer'} >
             Created by Alex
         </div>
     );

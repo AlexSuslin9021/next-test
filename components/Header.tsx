@@ -5,13 +5,13 @@ import Navigation from "@/components/Navigation";
 const Header = () => {
     const navigate=[
         {href:'/', label:'Home'},
-        {href:'/blog', label:'Blog'},
+        {href:'/dashboard', label:'Dashboard'},
         {href:'/about', label:'About'},
     ]
 
     return (
         <header className={'header'} >
-            {/*<Navigation navLinks={navigate}/>*/}
+            <Navigation navLinks={navigate}/>
         </header>
     );
 };
