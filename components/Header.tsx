@@ -11,9 +11,19 @@ const Header = () => {
 
     return (
         <header className={'header'} >
-            <Navigation navLinks={navigate}/>
+            {/*<Navigation navLinks={navigate}/>*/}
         </header>
     );
 };
 
 export default Header;
+
+
+// async  function getData(){
+//     const res=await fetch(`https://jsonplaceholder.typicode.com/posts`,{
+//         next:{
+//             revalidate:60
+//         }
+//     })
+//     return res.json()
+// }
