@@ -11,8 +11,7 @@ export default function AboutLayout({
      <div>
          <h1>About us</h1>
          <ul>
-             <li><Link href='/about/contact'>Contact</Link> </li>
-             <li><Link href='/about/team'>Team</Link> </li>
+             <li><Link href='/about/team/person'>person</Link> </li>
 
          </ul>
          {children}
